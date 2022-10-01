@@ -14,7 +14,7 @@ class PassMessage extends React.Component{
             if(this.state.inputValue === ''){
                 this.setState({check:false})
                 console.log(this.state.check)
-            }else{
+            }else{''
                 this.setState({check:!this.state.check})
                 
             }
@@ -26,7 +26,7 @@ class PassMessage extends React.Component{
         this.setState({inputValue:''})
         this.setState({check:!this.state.check})
         {
-            // i couldn't select the input by using the React, it does by PROPS
+            // i could do with props
             const input = document.querySelector('input')
             input.value = ''
         }
